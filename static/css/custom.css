@@ -1,5 +1,5 @@
 header.site {
-	background-image: url("/images/cover.jpg");
+	background-image: url("/{{ .Site.Params.Cover}}");
 	background-position: center center;
 	background-repeat: no-repeat; 
 	padding: 100px 0;

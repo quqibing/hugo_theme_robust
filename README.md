@@ -2,6 +2,21 @@
 
 2016.02.02
 
+1. 把评论系统改为符合国情的友言。
+2. 添加博客作者和图片的侧边栏。
+3. 把Logo和作者照片修改为可配置。
+
+修改与增加的配置选项：
+	[params]
+	  Author = "博主姓名"
+	  AuthorDes = "博主介绍"
+	  Profile = "images/profile.jpg" # 博主头像
+	  Logo = "images/logo.jpg" # 头部图片
+	  UyanId = "1655689" # 友言id
+	  comment = true # 开启评论
+	  
+2016.02.02
+
 1. 把界面修改为中文
 2. 添加Logo背景，在static/images/cover.jpg指定背景Logo。
 3. 效果预览：[http://www.aicookie.com](http://www.aicookie.com)

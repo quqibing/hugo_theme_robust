@@ -1,8 +1,12 @@
 <aside class="site">
-
+	<div class="section">
+		<header><div class="title">{{ .Site.Params.Author }}</div></header>
+ 		<div class="image" style="width:100px;height:100px"><img title="{{ .Site.Params.AuthorDes}}" src="{{ $.Site.BaseURL }}{{ .Site.Params.Profile}}" width="100" height="100"></img>
+		</div>
+  	</div>
   {{ if and .IsPage (ne .Params.toc false) }}
   <div class="section">
-    <header><div class="title">TableOfContents</div></header>
+    <header><div class="title">内容目录</div></header>
     <div class="list-default">{{ .TableOfContents }}</div>
   </div>
   {{ end }}

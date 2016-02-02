@@ -31,8 +31,8 @@
 
   <body>
 
-    <header class="site">
-      <div class="title"><a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a></div>
+    <header class="site" style="background: url({{ $.Site.BaseURL }}{{ .Site.Params.Logo}}) no-repeat center center;">
+      <div class="title" ><a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a></div>
     </header>
 
     <div class="container site">
