@@ -9,7 +9,7 @@
 
   {{ if ne (len .Site.Menus) 0 }}
   <div class="section menu">
-    <header><div class="title">Menu</div></header>
+    <header><div class="title">菜单</div></header>
 
     {{ range .Site.Menus }}
     <ul>
@@ -34,7 +34,7 @@
   {{ end }}
 
   <div class="section">
-    <header><div class="title">LatestPosts</div></header>
+    <header><div class="title">最新文章</div></header>
     <div class="content">
       {{ range first 10 .Site.Pages }}
       <div class="sm">{{ .Render "li" }}</div>
