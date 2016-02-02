@@ -7,6 +7,7 @@
 3. 把Logo和作者照片修改为可配置。
 
 修改与增加的配置选项：
+
 	[params]
 	  Author = "博主姓名"
 	  AuthorDes = "博主介绍"
