@@ -1,3 +1,12 @@
+# 修改记录
+
+2016.02.02
+
+1. 把界面修改为中文
+2. 添加Logo背景，在static/images/cover.jpg指定背景Logo。
+3. 效果预览：[http://www.aicookie.com](http://www.aicookie.com)
+
+---
 ![screenshot](https://raw.githubusercontent.com/dim0627/hugo_theme_aglaus/master/images/screenshot.png)
 
 # Features
