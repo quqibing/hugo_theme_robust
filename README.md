@@ -13,7 +13,7 @@
 	  AuthorDes = "博主介绍"
 	  Profile = "images/profile.jpg" # 博主头像
 	  Logo = "images/logo.jpg" # 头部图片
-	  UyanId = "1655689" # 友言id
+	  UyanId = "1234567" # 友言id
 	  comment = true # 开启评论
 	  
 2016.02.02
