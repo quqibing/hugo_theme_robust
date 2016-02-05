@@ -44,11 +44,27 @@
           {{ with .Params.tags }}<div class="section">{{ range . }}<a href="{{ $.Site.BaseURL}}tags/{{ . }}" class="tag">{{ . }}</a> {{ end }}</div>{{ end }}
 
           <div class="section share">
-            <a href="http://www.facebook.com/sharer.php?src=bm&u={{ .Permalink }}&t={{ .Title }}" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-facebook"></i></a>
-            <a href="http://twitter.com/intent/tweet?url={{ .Permalink }}&text={{ .Title }}&tw_p=tweetbutton" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-twitter"></i></a>
-            <a href="https://plus.google.com/share?url={{ .Permalink }}" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-google-plus"></i></a>
-            <a href="http://getpocket.com/edit?url={{ .Permalink }}&title={{ .Title }}" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-get-pocket"></i></a>
-          </div>
+			<!-- JiaThis Button BEGIN -->
+			<div class="jiathis_style_24x24">
+				<a class="jiathis_button_qzone"></a>
+				<a class="jiathis_button_tsina"></a>
+				<a class="jiathis_button_tqq"></a>
+				<a class="jiathis_button_weixin"></a>
+				<a class="jiathis_button_cqq"></a>
+				<a class="jiathis_button_fb"></a>
+				<a class="jiathis_button_twitter"></a>
+				<a class="jiathis_button_googleplus"></a>
+				<a class="jiathis_button_diandian"></a>
+				<a class="jiathis_button_renren"></a>
+				<a href="http://www.jiathis.com/share?uid=1655689" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+				<a class="jiathis_counter_style"></a>
+			</div>
+			<script type="text/javascript">
+			var jiathis_config = {data_track_clickback:'true'};
+			</script>
+			<script type="text/javascript" src="http://v3.jiathis.com/code_mini/jia.js?uid=1655689" charset="utf-8"></script>
+			<!-- JiaThis Button END -->          
+		</div>
 
           {{ if and (ne .Site.Params.comment false) (ne .Params.comment false) }}
           {{ with .Site.Params.UyanId }}

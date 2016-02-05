@@ -1,6 +1,11 @@
+theme="robust"
 BaseURL: "http://example.com"
-LanguageCode: "en-us"
+LanguageCode: "zh-CN"
 Title: "Robust"
+paginate = 10 # optional
+copyright = "Copyright (c) 2015 - 2016, Your Name; all rights reserved."
+watch = true # optional
+uglyurls = false # optional 使用.html后缀
 
 Params:
   Author: "Your name."
@@ -8,19 +13,22 @@ Params:
   DateForm: "Mon, Jan 2, 2006"
   GoogleAnalyticsUserID: "Your ID."
   GravatarHash: "Your Hash."
-  Facebook: "Your ID."
-  Twitter: "Your ID."
-  Github: "Your ID."
-  Disqus: "Your Disqus."
   SyntaxHighlightTheme: "solarized_dark.min.css"
   ShowRelatedPost: True
   ShowTagCloud: True
-
+  
+  AuthorDes: "博主介绍"
+  Profile: "images/profile.jpg" # 博主头像
+  Logo: "images/logo.jpg" # 头部图片
+  UyanId: "1234567" # 友言id
+  comment: true # 开启评论
+  uglyurls: False # 使用.html后缀
+  
 Indexes:
   tag: "tags"
 
 permalinks:
-  post: /blog/:year/:month/:day/:title/
+  post: /blog/:year/:month/:day/:title/ #开启这个后uglyurls参数对文章无效。
 
 MetadataFormat: "yaml"
 
